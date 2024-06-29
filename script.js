@@ -1,14 +1,19 @@
-document.getElementById('login-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
-    
-    // Aqui você pode adicionar a lógica para validar o usuário e senha
-    if(username && password === 'admin') {
-        window.location.href = 'home.html';
-    } else {
-        alert('Usuário ou senha inválidos');
-    }
-    console.log('Usuário:', username, 'Senha:', password);    
-    
+document.addEventListener('DOMContentLoaded', function() {
+    // Função para enviar o nome de usuário para o localStorage e redirecionar para a página inicial
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        var nomeUsuario = document.getElementById('username').value;
+        localStorage.setItem('nomeUsuario', nomeUsuario);
+        window.location.href = "home.html";
+    });
+
+    // Função para exibir o nome de usuário na página inicial
+    window.onload = function() {
+        var nomeUsuario = localStorage.getItem('nomeUsuario');
+        if (nomeUsuario) {
+            document.getElementById('welcome-message').textContent = 'Bem-vindo, ' + nomeUsuario + '!';
+        } else {
+            document.getElementById('welcome-message').textContent = 'Por favor, faça login.';
+        }
+    };
 });

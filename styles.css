@@ -7,17 +7,17 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    font-weight: bold;
+  background-color: #566873;
+  }
+  .login-body{
     background-color: #1A1E40;
     background-size: cover;
     background-position: center;
     min-height: 100vw;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
   }
-  
   #login-container {
     width: 400px;
     height: 300px;
@@ -64,9 +64,7 @@ body {
   .new-user p{
   text-align: center;
 }
-#body-home {
-  background-color: #566873;
-}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -238,4 +236,37 @@ main {
   width: 50%;
   height: 50px;
   margin-top: 50px;
+}
+/*Cadastro de usuários*/
+.cadastrar-usuario{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px auto;
+  padding: 20px 30px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+.cadastrar-usuario div{
+  width: 50%;
+}
+.cadastrar-usuario input[type=text],
+.cadastrar-usuario input[type=password],
+.cadastrar-usuario input[type=date],
+.cadastrar-usuario input[type=email] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.cadastrar-usuario button {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #3858FF;
+  color: #fff;
+  font-weight: bold;
+  border-width: 0px;
+  margin: 5px;
 }
