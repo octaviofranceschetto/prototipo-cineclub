@@ -74,6 +74,10 @@ header {
   padding: 20px 20px;
   background-color: #566873;
 }
+.search-container{
+  width: 600px;
+  display: flex;
+}
 .search-container input[type="text"] {
   margin-left: 235px;
   padding: 5px;
@@ -82,7 +86,15 @@ header {
   outline: none;
   border-radius: 30px;
   width: 100%;
-  height: 40px;
+  height: 45px;
+}
+.search-container input[type="text"]:focus {
+  border-color: #007bff;
+}
+.search-container img{
+  margin-top: 10px;
+  margin-left: -30px;
+  cursor: pointer;
 }
 
 .welcome-section span {
@@ -120,7 +132,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 200px;
+  width: 250px;
   height: 100%;
   overflow-y: auto;
   background-color: #566873;
@@ -153,8 +165,16 @@ header {
 
 .centered-links li {
   margin-bottom: 10px;
+  list-style: none;
 }
 
+.centered-links li > a:hover {
+  color: #e38800;
+}
+.centered-links li > img {
+  margin-right: 10px;
+  
+}
 .centered-links a {
   color: white;
   text-decoration: none;
