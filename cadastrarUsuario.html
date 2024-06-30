@@ -8,10 +8,6 @@
   </head>
   <body>
     <header>
-        <div class="search-container">
-            <input type="text" placeholder="Pesquise filmes, Diretores...">
-            <img width="20" height="20" src="https://img.icons8.com/tapes/40/search.png" alt="search"/>
-        </div>
         <div class="welcome-section" >
             <span id="welcome-message"></span>
         </div>
@@ -29,47 +25,47 @@
         <li><img width="25" height="25" src="https://img.icons8.com/deco/48/star.png" alt="star"/><a href="./classificar.html">Classificar</a></li>
         <li><img width="25" height="25" src="https://img.icons8.com/deco/48/plus-math.png" alt="plus-math"/><a href="./cadastrarFilme.html">Adicionar Filme</a></li>
         <li><img width="25" height="25" src="https://img.icons8.com/deco/48/plus-math.png" alt="plus-math"/><a href="./cadastrarUsuario.html">Adicionar Usuário</a></li>
+        <li><img width="25" height="25" src="https://img.icons8.com/deco/48/plus-math.png" alt="plus-math"/><a href="./usuarios.html">Ver Usuário</a></li>
         <li><img width="25" height="25" src="https://img.icons8.com/deco/48/bookmark.png" alt="bookmark"/><a href="./todosOsFilmes.html">Todos os Filmes</a></li>
       </ul>
     </nav>
 
     <main>
-    <section class="movie-box">
-        <form>
-            <div class="cadastrar-usuario">
-                <div>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required />
-                </div>
-
-                <div>
-                <label for="usuario">Nome de Usuário:</label>
-                <input type="text" id="usuario" name="usuario" required />
-                </div>
-
-                <div>
-                <label for="dataNascimento">Data de Nascimento:</label>
-                <input
-                    type="date"
-                    id="dataNascimento"
-                    name="dataNascimento"
-                    required
-                />
-                </div>
-
-                <div>
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required />
-                </div>
-
-                <div>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required />
-                </div>
-
-                <button type="submit">Cadastrar</button>
-            </div>
-        </form>
-    </section>
+        <div class="conteudo">
+            <h1>Cadastrar Usuário</h1>
+            <section class="movie-box">
+                <form action="./todosOsFilmes.html">
+                    <div class="cadastrar-usuario">
+                        <div>
+                        <input type="text" id="nome" name="nome" placeholder="Nome:" required />
+                        </div>
+        
+                        <div>
+                        <input type="text" id="usuario" name="usuario"  placeholder="Nome de Usuário::" required />
+                        </div>
+        
+                        <div>
+                        <input
+                            type="date"
+                            id="dataNascimento"
+                            name="dataNascimento" placeholder="Data de Nascimento:"
+                            required
+                        />
+                        </div>
+        
+                        <div>
+                        <input type="password" id="senha" name="senha" placeholder="Senha:" required />
+                        </div>
+        
+                        <div>
+                        <input type="email" id="email" name="email" placeholder="E-mail:" required />
+                        </div>
+        
+                        <button type="submit" value="" >Cadastrar</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    
   </body>
 </html>

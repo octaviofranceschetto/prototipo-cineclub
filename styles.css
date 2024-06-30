@@ -153,7 +153,7 @@ header {
   justify-content: space-around;
   padding: 20px 0;
   margin-left: 30px;
-  margin-top: 100%;
+  margin-top: 25%;
 }
 
 .centered-links ul {
@@ -186,13 +186,27 @@ main {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+.conteudo {
+  background-color: #fff;
+  border-radius: 35px;
+  color: #4a529d;
+  align-content: space-between;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  margin: 40px;
+}
+.conteudo h1{
+  display: flex;
+  margin: 5px;
+  margin-top: 50px;
+}
 .movie-box {
   background-color: #fff;
   border-radius: 35px;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-  border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
   margin: 40px;
@@ -238,14 +252,19 @@ main {
   margin-top: 50px;
 }
 /*Cadastro de usuários*/
+form {
+  position: relative;
+  left: 10%;
+}
 .cadastrar-usuario{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 100px auto;
   padding: 20px 30px;
   background: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   border-radius: 10px;
+  width: 80%;
 }
 .cadastrar-usuario div{
   width: 50%;
@@ -255,12 +274,12 @@ main {
 .cadastrar-usuario input[type=date],
 .cadastrar-usuario input[type=email] {
   width: calc(100% - 20px);
+  height: 50px;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 20px;
 }
-
 .cadastrar-usuario button {
   padding: 10px;
   border-radius: 20px;
@@ -269,4 +288,99 @@ main {
   font-weight: bold;
   border-width: 0px;
   margin: 5px;
+  width: 50%;
+  height: 50px;
+}
+.cadastrar-usuario button:hover {
+  background-color: #d1821a;
+  cursor: pointer;
+}
+
+/* Todos os Filmes */
+
+.movie-box-tf {
+  background-color: #fff;
+  display: flex;
+  border-radius: 35px;
+  align-content: space-between;
+  padding: 10px;
+  text-align: center;
+  margin: 40px;
+}
+.filme-tf{
+  width: 300px;
+  height: auto;
+  border: 1px solid #515151;
+  border-radius: 30px;
+  margin: 30px;
+}
+.capa-tf img {
+  border-radius: 30px;
+  margin: 30px;
+  max-width: 300px;
+  max-height: 300px;
+  height: auto;
+}
+.info-tf h2{
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.info-tf span{
+  text-align: left;
+  font-size: small;
+  color: #515151;
+  display: block;
+  margin-left: 10px;
+}
+.info-tf button {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+  width:35%;
+  height: 40px;
+}
+
+/* Usuarios */
+
+.conteudo-user {
+  background-color: #fff;
+  border-radius: 35px;
+  color: #4a529d;
+  align-content: space-between;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  margin: 40px;
+  width: max-content;
+}
+.conteudo-user h1{
+  display: flex;
+  margin: 5px;
+  margin-top: 50px;
+}
+.tabela-user{
+  margin: 50px;
+  width: 90%;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: #fff;
+  color: #333;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
