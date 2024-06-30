@@ -540,3 +540,47 @@ tbody tr:nth-child(even) {
   margin-top: 30px;
   margin-left: 30px;
 }
+/*Cadastrar Filme*/
+
+.cadastrar-filme{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 100px auto;
+  padding: 20px 30px;
+  background: #fff;
+  border-radius: 10px;
+  width: 80%;
+}
+.cadastrar-filme div{
+  width: 50%;
+}
+.cadastrar-filme input[type=text],
+.cadastrar-filme input[type=date],
+.cadastrar-filme input[type=number] {
+  width: calc(100% - 20px);
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+.cadastrar-filme textarea{
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+.cadastrar-filme input[type = file] {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #3858FF;
+  color: #fff;
+  font-weight: bold;
+  border-width: 0px;
+  margin: 5px;
+  width: 50%;
+  height: 50px;
+}
+.cadastrar-filme button:hover {
+  background-color: #d1821a;
+  cursor: pointer;
+}
