@@ -1,0 +1,646 @@
+*{
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #566873;
+  }
+  .login-body{
+    background-color: #1A1E40;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+  }
+  button > a {
+    color: white;
+    text-decoration: none;
+  }
+  #login-container {
+    width: 400px;
+    height: 300px;
+    margin: 200px auto;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+  }
+  
+  #login-form input[type=text],
+  #login-form input[type=password] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+  }
+  
+  #login-form button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #3858FF;
+    color: #fff;
+    font-weight: bold;
+    border-width: 0px;
+    margin: 5px;
+  }
+  
+  #login-form button:hover {
+   cursor: pointer;
+  }
+
+ #login-form p{
+   margin: 5px;
+   color: #84898B;
+   font-size: 10px;
+ }
+
+  .password p{
+  text-align: right;
+ }
+  .new-user p{
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #566873;
+}
+.search-container{
+  width: 600px;
+  display: flex;
+}
+.search-container input[type="text"] {
+  margin-left: 235px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  border-radius: 30px;
+  width: 100%;
+  height: 45px;
+}
+.search-container input[type="text"]:focus {
+  border-color: #007bff;
+}
+.search-container img{
+  margin-top: 10px;
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+.welcome-section span {
+  margin: 0 20px;
+  color: #fff;
+}
+
+.logout-profile {
+  display: flex;
+  align-items: center;
+}
+
+.logout-profile img {
+  background-color: #c2c4c6;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logout-profile a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.logout-profile a:hover {
+  color: #cc0000;
+}
+.nav-lateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #566873;
+  color: white;
+}
+
+.sidebar-header {
+  background-color: #566873;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: xx-large;
+}
+
+.centered-links {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: larger;
+  justify-content: space-around;
+  padding: 20px 0;
+  margin-left: 30px;
+  margin-top: 25%;
+}
+
+.centered-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.centered-links li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.centered-links li > a:hover {
+  color: #e38800;
+}
+.centered-links li > img {
+  margin-right: 10px;
+  
+}
+.centered-links a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  margin-left: 220px; /* Espaçamento para a barra de navegação lateral */
+  margin-top: 40px;
+  align-items: center;
+  border-radius: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.conteudo {
+  background-color: #fff;
+  border-radius: 35px;
+  color: #4a529d;
+  align-content: space-between;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  margin: 40px;
+}
+.conteudo h1{
+  display: flex;
+  margin: 5px;
+  margin-top: 50px;
+  margin-left: 80px;
+}
+.movie-box {
+  background-color: #fff;
+  border-radius: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding: 10px;
+  text-align: center;
+  margin: 40px;
+}
+.filme{
+  width: 45%;
+  background-color: #c2c4c6;
+  border-radius: 30px;
+  margin: 30px;
+}
+.capa img {
+  border-radius: 30px;
+  margin: 30px;
+  float: left;
+  max-width: 300px;
+  max-height: 300px;
+  height: auto;
+}
+.info h2{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.info span{
+  display: block;
+  margin: 5px;
+  text-align: left;
+  color: #515151;
+}
+#nota {
+  margin-top: 40px;
+}
+.info button {
+  background-color: #e38800;
+  color: white;
+  border: none;
+  display: block;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 50%;
+  height: 50px;
+  margin-top: 50px;
+}
+/*Cadastro de usuários*/
+form {
+  position: left;
+  left: 10%;
+}
+.cadastrar-usuario{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 100px auto;
+  margin-left: 150px;
+  padding: 20px 30px;
+  background: #fff;
+  border-radius: 10px;
+  width: 80%;
+}
+.cadastrar-usuario div{
+  width: 50%;
+}
+.cadastrar-usuario input[type=text],
+.cadastrar-usuario input[type=password],
+.cadastrar-usuario input[type=date],
+.cadastrar-usuario input[type=email] {
+  width: calc(100% - 20px);
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+.cadastrar-usuario button {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #3858FF;
+  color: #fff;
+  font-weight: bold;
+  border-width: 0px;
+  margin: 5px;
+  width: 50%;
+  height: 50px;
+}
+.cadastrar-usuario button:hover {
+  background-color: #d1821a;
+  cursor: pointer;
+}
+
+/* Todos os Filmes */
+
+.movie-box-tf {
+  background-color: #fff;
+  display: flex;
+  border-radius: 35px;
+  align-content: space-between;
+  padding: 10px;
+  text-align: center;
+  margin: 40px;
+}
+.filme-tf{
+  width: 300px;
+  height: auto;
+  border: 1px solid #515151;
+  border-radius: 30px;
+  margin: 30px;
+}
+.capa-tf img {
+  border-radius: 30px;
+  margin: 30px;
+  max-width: 300px;
+  max-height: 300px;
+  height: auto;
+}
+.info-tf h2{
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.info-tf span{
+  text-align: left;
+  font-size: small;
+  color: #515151;
+  display: block;
+  margin-left: 10px;
+}
+.info-tf button {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+  width:35%;
+  height: 40px;
+}
+
+/* Usuarios */
+
+.conteudo-user {
+  background-color: #fff;
+  border-radius: 35px;
+  color: #4a529d;
+  align-content: space-between;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  margin: 40px;
+  width: max-content;
+}
+.conteudo-user h1{
+  display: flex;
+  margin: 5px;
+  margin-top: 50px;
+}
+.tabela-user{
+  margin: 50px;
+  width: 90%;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: #fff;
+  color: #333;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Classificar */
+
+.movie-box-classificar {
+  background-color: #fff;
+  display: flex;
+  border-radius: 35px;
+  align-content: space-between;
+  padding: 10px;
+  text-align: center;
+  margin: 40px;
+}
+.filme-classificar{
+  width: 300px;
+  height: auto;
+  border: 1px solid #515151;
+  border-radius: 30px;
+  margin: 30px;
+}
+.capa-classificar img {
+  border-radius: 30px;
+  margin: 30px;
+  max-width: 300px;
+  max-height: 300px;
+  height: auto;
+}
+.info-classificar h2{
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.info-classificar span{
+  text-align: left;
+  font-size: small;
+  color: #515151;
+  display: block;
+  margin-left: 10px;
+}
+.info-classificar button {
+  background-color: #3134e7;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+  width:35%;
+  height: 40px;
+}
+.info-classificar button > a {
+  color: white;
+  text-decoration: none;
+}
+#btn-ver-filme{
+  background-color: #707070;
+}
+
+/*Classificar Filme*/
+.movie-box-classificar-filme {
+  background-color: #fff;
+  display: flex;
+  border-radius: 35px;
+  align-content: space-between;
+  padding: 10px;
+  text-align: center;
+  margin: 40px;
+}
+.filme-classificar-filme{
+  width: 300px;
+  height: auto;
+  border-radius: 30px;
+  margin: 30px;
+}
+.capa-classificar-filme img {
+  border-radius: 30px;
+  margin: 30px;
+  max-width: 300px;
+  max-height: 300px;
+  height: auto;
+}
+.info-classificar-filme h2{
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+.info-classificar-filme span{
+  text-align: left;
+  font-size: small;
+  color: #515151;
+  display: block;
+  margin-left: 60px;
+}
+
+.nota-classificar-filme{
+  text-align: left;
+}
+.nota-classificar-filme input{
+  width: 60px;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.opiniao-classificar-filme{
+  text-align: left;
+}
+.opiniao-classificar-filme input{
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.opiniao-classificar-filme button{
+  background-color: #3134e7;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  width:40%;
+  height: 40px;
+}
+.conteudo-classificado{background-color: #fff;
+  border-radius: 35px;
+  color: #006026;
+  align-content: space-between;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  margin: 40px;
+}
+.conteudo-classificado h1{
+  display: flex;
+  margin: 5px;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.info-filme-classificado {
+  text-align: left;
+  font-size: large;
+  color: #515151;
+  display: block;
+  margin-top: 60px;
+  margin-left: 60px;
+}
+.info-filme-classificado h2{
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+.info-filme-classificado span{
+  text-align: left;
+  font-size: large;
+  color: #515151;
+  display: block;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+/*Cadastrar Filme*/
+
+.movie-box-cadastrar-filme{
+  margin: 100px auto;
+  padding: 20px 30px;
+  background: #fff;
+  border-radius: 10px;
+  width: 80%;
+}
+.movie-box-cadastrar-filme-imagem{
+  width: 50%;
+  margin-left: 20%;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+.movie-box-cadastrar-filme{
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie-box-cadastrar-filme-form input[type=text],
+.movie-box-cadastrar-filme-form input[type=date],
+.movie-box-cadastrar-filme-form input[type=number] {
+  width: calc(50% - 20px);
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+.movie-box-cadastrar-filme-form input[type=date],
+.movie-box-cadastrar-filme-form input[type=number] {
+  width: 24%;
+}
+.movie-box-cadastrar-filme-form textarea{
+  border: 1px solid #ddd;
+  text-align: left;
+  padding-top: 10px;
+  border-radius: 20px;
+}
+.movie-box-cadastrar-filme-imagem button {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #3858FF;
+  color: #fff;
+  font-weight: bold;
+  border-width: 0px;
+  margin: 5px;
+  width: 150px;
+  height: 50px;
+}
+.movie-box-cadastrar-filme-form button {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #3858FF;
+  color: #fff;
+  font-weight: bold;
+  border-width: 0px;
+  margin: 5px;
+  width: 150px;
+  height: 50px;
+}
+.movie-box-cadastrar-filme-form button:hover {
+  background-color: #d1821a;
+  cursor: pointer;
+}
+.movie-box-cadastrar-filme-form button > a {
+  color: white;
+  text-decoration: none;
+}
+
+.movie-box-cadastrar-filme{
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie-box-cadastrar-filme-confirmacao h2{
+  color: #333;
+}
+.movie-box-cadastrar-filme-confirmacao button{
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #3858FF;
+  color: #fff;
+  font-weight: bold;
+  border-width: 0px;
+  margin: 50px;
+  width: 150px;
+  height: 50px;
+}
+#nao{
+  background-color: #ff0000;
+}
+#sim{
+  background-color: #076e07;
+}
+.movie-box-cadastrar-filme-confirmacao button > a {
+  color: white;
+  text-decoration: none;
+
+}

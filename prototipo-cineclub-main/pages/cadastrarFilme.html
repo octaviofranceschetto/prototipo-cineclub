@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="welcome-section">
+            <span id="welcome-message"></span>
+        </div>
+        <div class="logout-profile">
+            <a href="../index.html">Sair</a>
+            <img width="100" height="100" src="https://img.icons8.com/ios/100/user--v1.png" alt="foto de perfil" />
+        </div>
+    </header>
+
+    <nav class="nav-lateral">
+        <div class="sidebar-header">CineClub</div>
+        <ul class="centered-links">
+            <li><img width="25" height="25" src="https://img.icons8.com/deco/48/home.png" alt="home" /><a
+                    href="../pages/home.html">Home</a></li>
+            <li><img width="25" height="25" src="https://img.icons8.com/plumpy/24/hearts.png" alt="hearts" /><a
+                    href="../pages/favoritos.html">Meus Favoritos</a></li>
+            <li><img width="25" height="25" src="https://img.icons8.com/deco/48/star.png" alt="star" /><a
+                    href="../pages/classificar.html">Classificar</a></li>
+            <li><img width="25" height="25" src="https://img.icons8.com/deco/48/plus-math.png" alt="plus-math" /><a
+                    href="../pages/cadastrarFilme.html">Adicionar Filme</a></li>
+            <li><img width="25" height="25" src="https://img.icons8.com/deco/48/plus-math.png" alt="plus-math" /><a
+                    href="../pages/cadastrarUsuario.html">Adicionar Usuário</a></li>
+            <li><img width="25" height="25" src="https://img.icons8.com/deco/48/plus-math.png" alt="plus-math" /><a
+                    href="../pages/usuarios.html">Ver Usuário</a></li>
+            <li><img width="25" height="25" src="https://img.icons8.com/deco/48/bookmark.png" alt="bookmark" /><a
+                    href="../pages/todosOsFilmes.html">Todos os Filmes</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="conteudo">
+            <h1>Cadastrar Filme</h1>
+            <section class="movie-box-cadastrar-filme-imagem">
+                <form action="../pages/filmeCadastrado.html">
+                    <div class="cadastrar-filme">
+                        <div class="cadastrar-filme-imagem">
+                            <img width="150px" height="150px" alt=""><br>
+                            <input type="file" required>
+                        </div>
+                </form>
+            </section>
+            <section class="movie-box-cadastrar-filme-form">
+                <div class="filme-cadastrar-filme">
+                    <div>
+                        <input type="text" id="titulo" name="titulo" placeholder="Titulo do filme:" required />
+                    </div>
+
+                    <div>
+                        <input type="text" id="diretor" name="diretor" placeholder="Diretor::" required />
+                    </div>
+
+                    <div>
+                        <input type="date" id="dataNascimento" name="lancamento" placeholder="Ano de lançamento"
+                            required />
+                        <input type="number" id="nota" name="nota" placeholder="Nota:" required />
+                    </div>
+
+                    <div>
+                        <input type="text" id="produtora" name="produtora" placeholder="Produtora:" required />
+                    </div>
+                    <textarea name="opiniao" id="opiniao" cols="60" rows="10"
+                        placeholder="     Deixe sua opinião sobre o filme."></textarea>
+
+
+                </div>
+                <button type="submit"><a href="../pages/filmeCadastrado.html">Cadastrar</a></button>
+        </div>
+        </section>
+        </div>
+    </main>
+</body>
+
+</html>
