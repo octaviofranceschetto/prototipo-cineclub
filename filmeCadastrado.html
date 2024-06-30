@@ -33,43 +33,11 @@
     <main>
         <div class="conteudo">
             <h1>Cadastrar Filme</h1>
-            <section class="movie-box-cadastrar-filme-imagem">
-                <form action="./filmeCadastrado.html">
-                    <div class="cadastrar-filme">
-                        <div class = "cadastrar-filme-imagem">
-                            <img width="150px" height="150px" alt=""><br>
-                           <input type="file" required>
-                        </div>
-                </form>
-            </section>
-            <section class="movie-box-cadastrar-filme-form">
-                <div class="filme-cadastrar-filme">
-                <div>
-                    <input type="text" id="titulo" name="titulo" placeholder="Titulo do filme:" required />
-                    </div>
-    
-                    <div>
-                    <input type="text" id="diretor" name="diretor"  placeholder="Diretor::" required />
-                    </div>
-    
-                    <div>
-                    <input
-                        type="date"
-                        id="dataNascimento"
-                        name="lancamento" placeholder="Ano de lançamento"
-                        required
-                    />
-                    <input type="number" id="nota" name="nota" placeholder="Nota:" required />
-                    </div>
-    
-                    <div>
-                        <input type="text" id="produtora" name="produtora" placeholder="Produtora:" required />
-                    </div>
-                        <textarea name="opiniao" id="opiniao" cols="60" rows="10" placeholder="     Deixe sua opinião sobre o filme."></textarea>
-    
-                    
-                </div>
-                    <button type="submit"><a href="./filmeCadastrado.html">Cadastrar</a></button>
+            <section class="movie-box-cadastrar-filme-confirmacao">
+                <h2>O filme foi cadastrado com sucesso. <br>
+                    Deseja cadastrar outro?</h2>
+                    <button id="nao" type="submit"><a href="./home.html">Não</a></button>
+                    <button id="sim" type="submit"><a href="./cadastrarFilme.html">Sim</a></button>
                 </div>
             </section>
         </div>  
