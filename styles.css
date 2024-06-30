@@ -200,6 +200,7 @@ main {
   display: flex;
   margin: 5px;
   margin-top: 50px;
+  margin-left: 80px;
 }
 .movie-box {
   background-color: #fff;
@@ -383,4 +384,159 @@ thead {
 
 tbody tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+/* Classificar */
+
+.movie-box-classificar {
+  background-color: #fff;
+  display: flex;
+  border-radius: 35px;
+  align-content: space-between;
+  padding: 10px;
+  text-align: center;
+  margin: 40px;
+}
+.filme-classificar{
+  width: 300px;
+  height: auto;
+  border: 1px solid #515151;
+  border-radius: 30px;
+  margin: 30px;
+}
+.capa-classificar img {
+  border-radius: 30px;
+  margin: 30px;
+  max-width: 300px;
+  max-height: 300px;
+  height: auto;
+}
+.info-classificar h2{
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.info-classificar span{
+  text-align: left;
+  font-size: small;
+  color: #515151;
+  display: block;
+  margin-left: 10px;
+}
+.info-classificar button {
+  background-color: #3134e7;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+  width:35%;
+  height: 40px;
+}
+.info-classificar button > a {
+  color: white;
+  text-decoration: none;
+}
+#btn-ver-filme{
+  background-color: #707070;
+}
+
+/*Classificar Filme*/
+.movie-box-classificar-filme {
+  background-color: #fff;
+  display: flex;
+  border-radius: 35px;
+  align-content: space-between;
+  padding: 10px;
+  text-align: center;
+  margin: 40px;
+}
+.filme-classificar-filme{
+  width: 300px;
+  height: auto;
+  border-radius: 30px;
+  margin: 30px;
+}
+.capa-classificar-filme img {
+  border-radius: 30px;
+  margin: 30px;
+  max-width: 300px;
+  max-height: 300px;
+  height: auto;
+}
+.info-classificar-filme h2{
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+.info-classificar-filme span{
+  text-align: left;
+  font-size: small;
+  color: #515151;
+  display: block;
+  margin-left: 60px;
+}
+
+.nota-classificar-filme{
+  text-align: left;
+}
+.nota-classificar-filme input{
+  width: 60px;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.opiniao-classificar-filme{
+  text-align: left;
+}
+.opiniao-classificar-filme input{
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.opiniao-classificar-filme button{
+  background-color: #3134e7;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  width:40%;
+  height: 40px;
+}
+.conteudo-classificado{background-color: #fff;
+  border-radius: 35px;
+  color: #006026;
+  align-content: space-between;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  margin: 40px;
+}
+.conteudo-classificado h1{
+  display: flex;
+  margin: 5px;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.info-filme-classificado {
+  text-align: left;
+  font-size: large;
+  color: #515151;
+  display: block;
+  margin-top: 60px;
+  margin-left: 60px;
+}
+.info-filme-classificado h2{
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+.info-filme-classificado span{
+  text-align: left;
+  font-size: large;
+  color: #515151;
+  display: block;
+  margin-top: 30px;
+  margin-left: 30px;
 }
