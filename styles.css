@@ -18,6 +18,10 @@ body {
     align-items: center;
     justify-content: center; 
   }
+  button > a {
+    color: white;
+    text-decoration: none;
+  }
   #login-container {
     width: 400px;
     height: 300px;
